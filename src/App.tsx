@@ -1,6 +1,6 @@
 
 import './App.css';
-import {  Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import {  Navigate, Route, HashRouter   as Router, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import { AuthContext, AuthProvider } from './Services/AuthContext';
@@ -38,7 +38,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
     <ToastProvider>
     
    
-    <Router>
+    <Router basename='/thientc79'>
     <AuthProvider>
     
     <StoreProvider>
