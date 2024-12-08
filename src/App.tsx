@@ -38,7 +38,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
     <ToastProvider>
     
    
-    <Router basename='thientc79/'>
+    <Router >
     <AuthProvider>
     
     <StoreProvider>
